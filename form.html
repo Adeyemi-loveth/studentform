@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+ 
+
+        .form-group {
+            margin-bottom: 5px;
+            
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+
+
+        .submit-button {
+            text-align: center;
+            margin-top: 15px;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        #student_major{ text-align: center;
+            margin-top: 15px;
+            
+        }
+    </style>
+</head>
+<body style="border-radius: 5px;">
+    <div class="form-group">
+    
+        <H1>Student's Form</H1>
+        <form>
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search" placeholder="Search for something...">
+            <input type="submit" value="Search">
+            <label for="volume">Volume:</label>
+<input type="range" id="volume" name="volume" min="0" max="100" step="1">
+
+          </form>
+        
+    <form action="message.html" method="post">
+     <fieldset>
+        <legend>Student's Biodata</legend>
+        <div>
+        <label for="firstName" class="form-group">First Name:</label>
+        <input type="text" required>
+        <br></div>
+        <div>
+        <label for="lastname">Last Name:</label>
+        <input type="text" required>
+        <br></div>
+       <div>
+        <label for="phonenumber">Phone no.:</label>
+        <input type="text" required>
+        <br></div>
+    
+        <label for="department">Department:</label>
+        <select>
+            <option selected disabled>--Select Here!</option>
+        
+            <option>Commercial</option>
+            <option>Sciences</option>
+            <option>Humanities</option>
+
+
+        </select><br>
+        <label for="checkbox">Subjects:</label><br>
+        <input type="checkbox">Mathematics<br>
+        <input type="checkbox">English<br>
+        <input type="checkbox">Civic<br>
+        <input type="checkbox">Social studies<br>
+        <input type="checkbox">Biology<br>
+        <input type="checkbox">Physics<br>
+        <input type="checkbox">Book keeping<br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Male<BR>
+        <input type="date"><br>
+        <input type="file"><br>
+
+        
+    
+        <div class="form-group">
+            <label for="student_major">Major:</label>
+            <select id="student_major" name="student_major" required>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Other">Other</option>
+            </select>
+    <a href="message.html"><button class="submit-button ">  <b>SUBMIT</b></button>
+    </a> 
+       
+        </div>
+    </fieldset> 
+    </form>
+
+</div>
+</body>
+</html>

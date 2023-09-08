@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .submit-button {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .submit-button button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Information Form</h2>
+        <form action="form.html" method="post">
+            <div class="form-group">
+                <label for="student_name">Name:</label>
+                <input type="text" id="student_name" name="student_name" required>
+              
+            </div>
+            <div class="form-group">
+                <label for="student_email">Email:</label>
+                <input type="text" id="student_email" name="student_email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="student_password" required>
+                
+            </div>
+          
+            <div class="login-button">
+                <button type="login">Log In</button>
+            </div>
+        </form>
+    </div>
+
+
+    
+</body>
+</html>
